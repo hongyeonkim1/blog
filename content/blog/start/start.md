@@ -1,5 +1,6 @@
 ---
 title: Hello World
+description: "Hello World"
 date: "2015-05-01T22:12:03.284Z"
 ---
 
