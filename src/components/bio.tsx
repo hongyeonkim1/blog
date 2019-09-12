@@ -32,7 +32,7 @@ const Avatar = styled(GatsbyImage)`
 export const Bio = () => {
   const data = useStaticQuery(graphql`
     query BioQuery {
-      avatar: file(absolutePath: { regex: "/boat-4332866_1280.png/" }) {
+      avatar: file(absolutePath: { regex: "/edit.png/" }) {
         childImageSharp {
           fixed(width: 50, height: 50) {
             ...GatsbyImageSharpFixed
