@@ -73,14 +73,14 @@ export const ResumePage = (props: Props) => {
               <div>
                 <FontAwesomeIcon icon={faPhone} />
                 <Badge>
-                  <span>010-3223-2342</span>
+                  <span>010-9215-1549</span>
                 </Badge>
               </div>
               <div>
                 <FontAwesomeIcon icon={faGithub} />
                 <Badge>
-                  <A href="https://github.com/hykimTF" target="_blank">
-                    https://github.com/hykimTF
+                  <A href="https://github.com/hykimmm" target="_blank">
+                    https://github.com/hykimmm
                   </A>
                 </Badge>
               </div>
