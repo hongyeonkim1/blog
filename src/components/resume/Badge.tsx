@@ -7,7 +7,7 @@ const BadgeStyle = styled.span.attrs(props => ({
   display: inline-block;
   margin: 0em 0.4em;
   padding: 0.25em 0.4em;
-  font-size: 75%;
+  font-size: 100%;
   font-weight: 700;
   line-height: 1;
   text-align: center;

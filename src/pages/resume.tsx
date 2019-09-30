@@ -40,9 +40,19 @@ export const ResumePage = (props: Props) => {
       <SEO title="김홍연 경력기술서" />
       <ResumeContainer>
         <ResumeItem>
-          <div style={{ display: "grid", gridTemplateColumns: "20% 80%" }}>
+          <div
+            style={{
+              display: "grid",
+              gridTemplateColumns: "18% 82%",
+              gridGap: "20px",
+            }}
+          >
             <div>
-              <img src={data.profile.childImageSharp.fixed.src} alt="Profile" />
+              <ProfileImage
+                style={{ width: "85%" }}
+                src={data.profile.childImageSharp.fixed.src}
+                alt="Profile"
+              />
               {/* <ProfileImage
                 fixed={data.profile.childImageSharp.fixed}
                 imgStyle={{ borderRadius: "4px" }}
@@ -69,8 +79,8 @@ export const ResumePage = (props: Props) => {
               <div>
                 <FontAwesomeIcon icon={faGithub} />
                 <Badge>
-                  <A href="https://github.com/hykimQ" target="_blank">
-                    https://github.com/hykimQ
+                  <A href="https://github.com/hykimTF" target="_blank">
+                    https://github.com/hykimTF
                   </A>
                 </Badge>
               </div>
@@ -79,12 +89,13 @@ export const ResumePage = (props: Props) => {
           <div
             style={{
               display: "grid",
-              gridTemplateColumns: "20% 80%",
+              gridTemplateColumns: "18% 82%",
               marginTop: "30px",
+              gridGap: "20px",
             }}
           >
             <div>
-              <h2 style={{ color: "#3c78d8" }}>간략한 소개</h2>
+              <h2 style={{ color: "#3c78d8", float: "right" }}>간략한 소개</h2>
             </div>
             <div>
               <p>
@@ -102,6 +113,49 @@ export const ResumePage = (props: Props) => {
           </div>
         </ResumeItem>
         <ResumeItem>
+          <div
+            style={{
+              display: "grid",
+              gridTemplateColumns: "18% 82%",
+              marginTop: "30px",
+              gridGap: "20px",
+            }}
+          >
+            <div>
+              <h2 style={{ color: "#3c78d8", float: "right" }}>보유 기술</h2>
+            </div>
+            <div style={{ display: "flex", alignItems: "center" }}>
+              <h4 style={{ color: "#3c78d8" }}>
+                (1: 기초수준, 2: 취미 개발 수준, 3: Production 개발 가능 수준)
+              </h4>
+            </div>
+            <div>
+              <h3 style={{ color: "gray", fontWeight: 500, float: "right" }}>
+                Front-end
+              </h3>
+            </div>
+            <div></div>
+            <div>
+              <h3 style={{ color: "gray", fontWeight: 500, float: "right" }}>
+                Back-end
+              </h3>
+            </div>
+            <div></div>
+            <div>
+              <h3 style={{ color: "gray", fontWeight: 500, float: "right" }}>
+                Database
+              </h3>
+            </div>
+            <div></div>
+            <div>
+              <h3 style={{ color: "gray", fontWeight: 500, float: "right" }}>
+                Etc
+              </h3>
+            </div>
+            <div></div>
+          </div>
+        </ResumeItem>
+        <ResumeItem>
           <div>
             <p>
               웹 프론트엔드 및 백엔드 개발자로서 다양한 경험이 있습니다. React,
@@ -116,7 +170,6 @@ export const ResumePage = (props: Props) => {
             </p>
           </div>
         </ResumeItem>
-        <ResumeItem></ResumeItem>
         <ResumeItem></ResumeItem>
         <ResumeItem></ResumeItem>
         <ResumeItem></ResumeItem>

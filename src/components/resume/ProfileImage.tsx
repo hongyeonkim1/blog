@@ -1,10 +1,11 @@
 import styled from "styled-components"
-import Image from "gatsby-image"
 
-const ProfileImage = styled(Image)`
-  display: inline;
-  border-radius: 4px;
-  padding: 5px;
+const ProfileImage = styled.img`
+  width: 80%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 0.4rem;
+  padding: 8px;
+  margin-bottom: 0px;
 `
 
 export default ProfileImage
