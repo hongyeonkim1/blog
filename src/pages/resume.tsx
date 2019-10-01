@@ -1,6 +1,10 @@
 import { PageRendererProps, graphql, useStaticQuery } from "gatsby"
 import React from "react"
-import { faPhone, faEnvelope } from "@fortawesome/free-solid-svg-icons"
+import {
+  faPhone,
+  faEnvelope,
+  faFileExcel,
+} from "@fortawesome/free-solid-svg-icons"
 import { faGithub } from "@fortawesome/free-brands-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { SEO } from "../components/seo"
@@ -8,6 +12,7 @@ import ResumeContainer from "../components/resume/ResumeContainer"
 import ResumeItem from "../components/resume/ResumeItem"
 import A from "../components/resume/A"
 import Badge from "../components/resume/Badge"
+import BadgePill from "../components/resume/BadgePill"
 import ProfileImage from "../components/resume/ProfileImage"
 
 type Props = PageRendererProps
@@ -36,7 +41,7 @@ export const ResumePage = (props: Props) => {
   `)
 
   return (
-    <div>
+    <>
       <SEO title="김홍연 경력기술서" />
       <ResumeContainer>
         <ResumeItem>
@@ -47,7 +52,13 @@ export const ResumePage = (props: Props) => {
               gridGap: "20px",
             }}
           >
-            <div>
+            <div
+              style={{
+                display: "flex",
+                justifyContent: "center",
+                alignContent: "center",
+              }}
+            >
               <ProfileImage
                 style={{ width: "85%" }}
                 src={data.profile.childImageSharp.fixed.src}
@@ -134,25 +145,113 @@ export const ResumePage = (props: Props) => {
                 Front-end
               </h3>
             </div>
-            <div></div>
+            <div
+              style={{
+                display: "grid",
+                gridTemplateColumns: "repeat(3, 1fr)",
+                marginLeft: 40,
+              }}
+            >
+              <ul style={{ marginBottom: "1.75rem" }}>
+                <li>
+                  <BadgePill>3</BadgePill>Reactjs
+                </li>
+              </ul>
+              <ul style={{ marginBottom: "1.75rem" }}>
+                <li>
+                  <BadgePill>3</BadgePill>Redux
+                </li>
+              </ul>
+              <ul style={{ marginBottom: "1.75rem" }}>
+                <li>
+                  <BadgePill>3</BadgePill>Redux-Saga
+                </li>
+              </ul>
+              <ul style={{ marginBottom: "1.75rem" }}>
+                <li>
+                  <BadgePill>3</BadgePill>JavaScript
+                </li>
+              </ul>
+              <ul style={{ marginBottom: "1.75rem" }}>
+                <li>
+                  <BadgePill>3</BadgePill>HTML/CSS
+                </li>
+              </ul>
+              <ul style={{ marginBottom: "1.75rem" }}>
+                <li>
+                  <BadgePill color="#868e96">2</BadgePill>jQuery
+                </li>
+              </ul>
+            </div>
             <div>
               <h3 style={{ color: "gray", fontWeight: 500, float: "right" }}>
                 Back-end
               </h3>
             </div>
-            <div></div>
+            <div
+              style={{
+                display: "grid",
+                gridTemplateColumns: "repeat(3, 1fr)",
+                marginLeft: 40,
+              }}
+            >
+              <ul style={{ marginBottom: "1.75rem" }}>
+                <li>
+                  <BadgePill>3</BadgePill>Java
+                </li>
+              </ul>
+              <ul style={{ marginBottom: "1.75rem" }}>
+                <li>
+                  <BadgePill>3</BadgePill>Spring
+                </li>
+              </ul>
+              <ul style={{ marginBottom: "1.75rem" }}>
+                <li>
+                  <BadgePill color="#868e96">2</BadgePill>nginx
+                </li>
+              </ul>
+            </div>
             <div>
               <h3 style={{ color: "gray", fontWeight: 500, float: "right" }}>
                 Database
               </h3>
             </div>
-            <div></div>
+            <div
+              style={{
+                display: "grid",
+                gridTemplateColumns: "repeat(3, 1fr)",
+                marginLeft: 40,
+              }}
+            >
+              <ul style={{ marginBottom: "1.75rem" }}>
+                <li>
+                  <BadgePill>3</BadgePill>Oracle Database
+                </li>
+              </ul>
+              <ul style={{ marginBottom: "1.75rem" }}>
+                <li>
+                  <BadgePill color="#868e96">2</BadgePill>Redis
+                </li>
+              </ul>
+            </div>
             <div>
               <h3 style={{ color: "gray", fontWeight: 500, float: "right" }}>
                 Etc
               </h3>
             </div>
-            <div></div>
+            <div
+              style={{
+                display: "grid",
+                gridTemplateColumns: "repeat(3, 1fr)",
+                marginLeft: 40,
+              }}
+            >
+              <ul style={{ marginBottom: "1.75rem" }}>
+                <li>
+                  <BadgePill color="#868e96">2</BadgePill>Git
+                </li>
+              </ul>
+            </div>
           </div>
         </ResumeItem>
         <ResumeItem>
@@ -176,7 +275,7 @@ export const ResumePage = (props: Props) => {
         <ResumeItem></ResumeItem>
         <ResumeItem></ResumeItem>
       </ResumeContainer>
-    </div>
+    </>
   )
 }
 
