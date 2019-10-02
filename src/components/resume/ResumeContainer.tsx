@@ -22,23 +22,31 @@ const ResumeContainer = styled.section`
   h6 {
     font-family: "Noto Sans KR", sans-serif !important;
     margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    font-family: inherit;
+    line-height: 1.2;
+    color: inherit;
+  }
+
+  ul {
+    padding-inline-start: 40px;
   }
 
   @media (min-width: 1200px) {
     max-width: 1140px;
   }
 
-  /* @media (min-width: 992px) {
+  @media (min-width: 992px) and (max-width: 1119px) {
     max-width: 960px;
-  } */
+  }
 
-  /* @media (min-width: 768px) {
+  @media (min-width: 768px) and (max-width: 991px) {
     max-width: 720px;
-  } */
+  }
 
-  /* @media (min-width: 576px) {
+  @media (min-width: 576px) and (max-width: 767px) {
     max-width: 540px;
-  } */
+  }
 `
 
 export default ResumeContainer
