@@ -6,6 +6,7 @@ const ProfileImage = styled.img`
   border-radius: 0.4rem;
   padding: 8px;
   margin-bottom: 0px;
+  object-fit: contain;
 `
 
 export default ProfileImage
