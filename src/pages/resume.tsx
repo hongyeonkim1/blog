@@ -340,22 +340,105 @@ export const ResumePage = (props: Props) => {
             </div>
           </div>
         </ResumeItem>
-        <ResumeItem></ResumeItem>
-        <ResumeItem></ResumeItem>
-        <ResumeItem></ResumeItem>
         <ResumeItem>
-          <div>
-            <p>
-              웹 프론트엔드 및 백엔드 개발자로서 다양한 경험이 있습니다. React,
-              Java, Oracle, Git, Linux 등을 사용해 프로덕션 서비스를 설계, 개발,
-              운영한 경험이 있습니다. 확장성과 유지 보수성이 높은 프론트엔드의
-              아키텍처와 패턴을 위해 언제나 고민하고 있습니다.
-              <br />
-              프론트엔드 개발의 정점을 찍고 싶다고 생각해 개인 프로젝트 및
-              다량의 개발 관련 독서로 다양하고 새로운 기술을 경험하고 있습니다.
-              이후 실무에 직접 적용하는 방식으로 항상 발전하는 개발자가 되기
-              위해 노력하고 있습니다.
-            </p>
+          <div
+            style={{
+              display: "grid",
+              gridTemplateColumns: "18% 82%",
+              marginTop: "30px",
+              gridGap: "40px",
+            }}
+          >
+            <div>
+              <h2 style={{ color: "#3c78d8", float: "right" }}>
+                개선/문제해결 사례
+              </h2>
+            </div>
+            <div>
+              <div>
+                <h4 style={{ fontSize: "1.5rem" }}>React 렌더링 최적화 사례</h4>
+                <ul>
+                  <li>
+                    문제: 많은 item을 렌더한 상태에서 그다음 페이지를 가져오거나
+                    해당 아이템에서 상태 변경으로 인해 render를 다시 해야 할 때
+                    렌더링 속도가 너무 느려지는 이슈가 있을{" "}
+                  </li>
+                  <li>측정:</li>
+                  <li>원인:</li>
+                  <li>연구: </li>
+                  <li>해결:</li>
+                  <li>결과:</li>
+                  <li>평가: </li>
+                  <li>배운점:</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </ResumeItem>
+        <ResumeItem>
+          <div
+            style={{
+              display: "grid",
+              gridTemplateColumns: "18% 82%",
+              marginTop: "30px",
+              gridGap: "40px",
+            }}
+          >
+            <div>
+              <h2 style={{ color: "#3c78d8", float: "right" }}>자기 소개</h2>
+            </div>
+            <div>
+              <div>
+                <h4 style={{ fontSize: "1.5rem" }}>[망설이지 말고 도전!]</h4>
+                <p>
+                  회사에서 서울시 프로젝트에 참여하던 당시에 하이브리드앱을
+                  담당하던 개발자가 퇴사하여 관련 업무를 담당하던 개발자가
+                  부족하였습니다. 이 당시에 저는 서울시 하천사업에 관련해 웹
+                  개발을 하고 있었고 회사에서는 제가 웹 개발을 하면서
+                  하이브리드앱도 개발하기를 원했습니다. 하이브리드앱을
+                  개발하기에 앞서 안드로이드에 대한 지식이 사전에 없었고 이를
+                  개발하는 데 어려움이 있을 것으로 생각했지만 하이브리드앱이라
+                  진입 장벽이 일반 모바일개발보다 웹 개발자에 있어 낮았고 이를
+                  수행하게 되었습니다.
+                </p>
+                <br />
+                <p>
+                  회사에서 서울시 프로젝트에 참여하던 당시에 하이브리드앱을
+                  담당하던 개발자가 퇴사하여 관련 업무를 담당하던 개발자가
+                  부족하였습니다. 이 당시에 저는 서울시 하천사업에 관련해 웹
+                  개발을 하고 있었고 회사에서는 제가 웹 개발을 하면서
+                  하이브리드앱도 개발하기를 원했습니다. 하이브리드앱을
+                  개발하기에 앞서 안드로이드에 대한 지식이 사전에 없었고 이를
+                  개발하는 데 어려움이 있을 것으로 생각했지만 하이브리드앱이라
+                  진입 장벽이 일반 모바일개발보다 웹 개발자에 있어 낮았고 이를
+                  수행하게 되었습니다.
+                </p>
+              </div>
+            </div>
+          </div>
+        </ResumeItem>
+        <ResumeItem>
+          <div
+            style={{
+              display: "grid",
+              gridTemplateColumns: "18% 82%",
+              marginTop: "30px",
+              gridGap: "40px",
+            }}
+          >
+            <div>
+              <h2 style={{ color: "#3c78d8", float: "right" }}>교육</h2>
+            </div>
+            <div>
+              <div>
+                <h4 style={{ fontSize: "1.5rem" }}>상명대학교 졸업</h4>
+                <i style={{ color: "gray" }}>컴퓨터과학전공</i>
+              </div>
+              <div>
+                <h4 style={{ fontSize: "1.5rem" }}>둔촌고등학교 졸업</h4>
+                <i style={{ color: "gray" }}>서울특별시</i>
+              </div>
+            </div>
           </div>
         </ResumeItem>
       </ResumeContainer>
